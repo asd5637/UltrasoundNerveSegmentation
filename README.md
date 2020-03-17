@@ -23,6 +23,5 @@ Deep learning neural networks are usually equipped with a large number of parame
 ## Result
 ![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/result1.png)
 ![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/result2.png)
-
-
+##### Figure 6: Results from our ensemble method.
 
