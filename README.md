@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Segmentation of Radial Nerve in Ultrasound Images Using Convolutional Neural Network
 ## Abstract
 In recent years, deep learning has achieved huge successes in many aspects such as object recognition and semantic analysis. Deep learning gets a great development in medical image as well. Peripheral Nerve Blocks is a type of regional anesthesia which need to find out the location of nerves and inject anesthetic nearby using ultrasound scanning. However, images recognition by medical experts is time-consuming. We trained a deep learning model which can perform segmentation of nerves in real time processing. It can be applied to an anesthesia technique called ‘Ultrasound-Guided Regional Anesthesia (UGRA). UGRA has less side-effect compare to general anesthesia. Our training dataset are acquired from two collaborative hospitals, Kaohsiung Veterans General Hospital (KVGH) and Kaohsiung Medical University Chung-Ho Memorial Hospital (KMUH). Our frameworks are based on the U-net model. Moreover, we prune our models using the Net-Trim algorithm, which is capable to reduce the parameters from a trained model. A simplified model consumes less prediction time and memory space. Our proposal achieves 0.59 Dice Coefficient and 0.93 accuracy for nerve segmentation.
@@ -25,8 +24,6 @@ Deep learning neural networks are usually equipped with a large number of parame
 ![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/result1.png)
 ![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/result2.png)
 ##### Figure 6: Results from our ensemble method.
-
-=======
 # Segmentation of Radial Nerve in Ultrasound Images Using Convolutional Neural Network
 ## Abstract
 In recent years, deep learning has achieved huge successes in many aspects such as object recognition and semantic analysis. Deep learning gets a great development in medical image as well. Peripheral Nerve Blocks is a type of regional anesthesia which need to find out the location of nerves and inject anesthetic nearby using ultrasound scanning. However, images recognition by medical experts is time-consuming. We trained a deep learning model which can perform segmentation of nerves in real time processing. It can be applied to an anesthesia technique called ‘Ultrasound-Guided Regional Anesthesia (UGRA). UGRA has less side-effect compare to general anesthesia. Our training dataset are acquired from two collaborative hospitals, Kaohsiung Veterans General Hospital (KVGH) and Kaohsiung Medical University Chung-Ho Memorial Hospital (KMUH). Our frameworks are based on the U-net model. Moreover, we prune our models using the Net-Trim algorithm, which is capable to reduce the parameters from a trained model. A simplified model consumes less prediction time and memory space. Our proposal achieves 0.59 Dice Coefficient and 0.93 accuracy for nerve segmentation.
@@ -53,5 +50,3 @@ Deep learning neural networks are usually equipped with a large number of parame
 ![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/result1.png)
 ![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/result2.png)
 ##### Figure 6: Results from our ensemble method.
-
->>>>>>> 13ad04daacca13f4567b41c1e3625a196d14fe49
