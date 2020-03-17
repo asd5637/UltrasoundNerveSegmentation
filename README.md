@@ -6,7 +6,6 @@ In recent years, deep learning has achieved huge successes in many aspects such 
 ##### Figure 1: The overview of our method
 ### Pre-processing (Wiener filter)
 Ultrasound imaging always encounters speckle noise problem. We utilized wiener filter to reduce noise in the images. Wiener filter is based on both global statistics and local statistics.
-![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/wiener.png)
 <img src="https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/wiener.png" width="80%" height="80%">
 ##### Figure 2: Wiener filtered images with different kernel size using wiener filter. The upper left image is the input source data. The others are filtered by 3x3, 5x5 and 7x7 kernel separately.
 ## Ensemble modeling
@@ -21,4 +20,9 @@ When examining prediction results, two or more regions might be segmented in a i
 Deep learning neural networks are usually equipped with a large number of parameters to perform complicated tasks. However, having too many parameters may cause an overfitting problem, which affects prediction accuracy. In addition, models with larger number of parameters frequently require longer prediction time and memory space. By giving a trained network, Net-Trim algorithm reduces connections at each layer while maintaining performance of the original model. Net-trim prunes neural networks on a layer by layer basis and returns a sparse weight matrix.To investigate possibility for model reduction, we applied the Net-trim algorithm to the 5-layers U-net model. Net-Trim prunes neural networks on a layer by layer basis by giving a trained network.
 ![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/Net-Trim.png)
 ##### Figure 5: Illustration of the Net-Trim algorithm.
+## Result
+![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/result1.png)
+![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/result2.png)
+
+
 
