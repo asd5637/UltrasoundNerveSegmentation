@@ -13,7 +13,7 @@ In the beginning, we tried to segment nerves with a trimmed 5-layer U-net by app
 ![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/model.png)
 ##### Figure 3: U-net architectures with different number of layers.
 ## Principal Component Analysis (PCA)
-![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/PCA.png | width=906)
+![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/PCA.png | width="906")
 ##### Figure 4: False positive region in prediction result.
 When examining prediction results, two or more regions might be segmented in a image in the validation data (shown in Figure 3-6). In order to remove unnecessary false positive regions in prediction, we make use of the fact that nerves are usually located in similar locations in ultrasound images scanned continuously through an upper arm. This is particularly true for neighboring slices. PCA provides an approximation of input data by extracting important information from input data. We consider nerve as the main component in the data and remove unnecessary false positive regions by PCA.
 
