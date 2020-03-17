@@ -13,7 +13,11 @@ In the beginning, we tried to segment nerves with a trimmed 5-layer U-net by app
 ![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/model.png)
 ##### Figure 3: U-net architectures with different number of layers.
 ## Principal Component Analysis (PCA)
-![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/PCA.png | width="906")
+![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/PCA.png)
 ##### Figure 4: False positive region in prediction result.
 When examining prediction results, two or more regions might be segmented in a image in the validation data (shown in Figure 3-6). In order to remove unnecessary false positive regions in prediction, we make use of the fact that nerves are usually located in similar locations in ultrasound images scanned continuously through an upper arm. This is particularly true for neighboring slices. PCA provides an approximation of input data by extracting important information from input data. We consider nerve as the main component in the data and remove unnecessary false positive regions by PCA.
+## Net-Trim
+Deep learning neural networks are usually equipped with a large number of parameters to perform complicated tasks. However, having too many parameters may cause an overfitting problem, which affects prediction accuracy. In addition, models with larger number of parameters frequently require longer prediction time and memory space. By giving a trained network, Net-Trim algorithm reduces connections at each layer while maintaining performance of the original model. Net-trim prunes neural networks on a layer by layer basis and returns a sparse weight matrix.To investigate possibility for model reduction, we applied the Net-trim algorithm to the 5-layers U-net model. Net-Trim prunes neural networks on a layer by layer basis by giving a trained network.
+![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/Net-Trim.png)
+##### Figure 5: Illustration of the Net-Trim algorithm.
 
