@@ -4,3 +4,6 @@ In recent years, deep learning has achieved huge successes in many aspects such 
 ## Method
 ![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/method.png)
 In the beginning, we tried to segment nerves with a trimmed 5-layer U-net by applying Net-Trim algorithm. However, we found that the prediction results contained more false negative case, which lead to a lower accuracy rate. As we tried 3 layers and 4 layers U-net in the same settings, we observed that with a shallower model (i.e. less layers) could gain higher accuracy rates but a lower dice coefficient score.
+The false negative cases had decreased a lot in models with fewer layers. In order to increase accuracy rate without losing dice score, we used ensemble modeling [31] based on these three models. The final prediction results were determined by average voting from the models (shown in Figure 3-5). The ensemble function is defined as:
+F=(∑_(i=1)^n▒P_i )/n
+where F is the output matrix, n represents the number of models (n=3 for our method). P_i represents the probability map of model i.
