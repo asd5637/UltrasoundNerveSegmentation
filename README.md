@@ -8,4 +8,6 @@ In recent years, deep learning has achieved huge successes in many aspects such 
 Ultrasound imaging always encounters speckle noise problem. We utilized wiener filter to reduce noise in the images. Wiener filter is based on both global statistics and local statistics.
 ![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/wiener.png)
 ##### Figure 2: Wiener filtered images with different kernel size using wiener filter. The upper left image is the input source data. The others are filtered by 3x3, 5x5 and 7x7 kernel separately.
+## Ensemble modeling
 In the beginning, we tried to segment nerves with a trimmed 5-layer U-net by applying Net-Trim algorithm. However, we found that the prediction results contained more false negative case, which lead to a lower accuracy rate. As we tried 3 layers and 4 layers U-net in the same settings, we observed that with a shallower model (i.e. less layers) could gain higher accuracy rates but a lower dice coefficient score.The false negative cases had decreased a lot in models with fewer layers. In order to increase accuracy rate without losing dice score, we used ensemble modeling based on these three models. The final prediction results were determined by average voting from the models.
+
