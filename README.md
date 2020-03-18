@@ -24,3 +24,5 @@ Deep learning neural networks are usually equipped with a large number of parame
 ![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/result1.png)
 ![image](https://github.com/asd5637/UltrasoundNerveSegmentation/blob/master/images/result2.png)
 ##### Figure 6: Results from our ensemble method.
+## Setup
+Computer programs including models and script are written in Python version 3.5, which are run on a Graphic Processing Unit (GPU) (Nvidia GTX 1080Ti), on an E5-1620 v3 CPU and 128 GB Memory. Setting up with Keras and Tensorflow backend, we use CUDA 8.0 and cuDNN 6.0 as our deep learning environment.
